@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+
+
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href='admin.css'>
+    <link rel="icon" href='./Images/bb_logo(black).png' type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+	<title>Blood Bank Admin Page</title>
+    <style media="screen">
+        form {
+padding: 20px 40px;
+}
+
+.form-group {
+position: relative;
+padding: 20px 0;
+width: 300px;
+max-width: 100%;
+}
+
+.form-group input {
+background-color: transparent;
+border: none;
+border-bottom: 1px solid #9e9e9e;
+color: #333;
+font-size: 16px;
+padding: 10px 0;
+display: block;
+width: 100%;
+}
+
+.form-group label {
+color: #9e9e9e;
+font-size: 16px;
+font-weight: 100;
+position: absolute;
+pointer-events: none;
+top: 0;
+transform: translateY(30px);
+transition: all 0.3s ease-in-out;
+left: 0px;
+}
+
+.form-group input:valid,
+.form-group input:focus {
+border-bottom-color: #F08080;
+outline: 1px;
+}
+
+.form-group input:valid + label,
+.form-group input:focus + label {
+color: #ee6e73;
+font-size: 14px;
+transform: translateY(0);
+}
+
+input[type="button"] {
+background-color: #ee6e73;
+border: 2px solid #ee6e73;
+border-radius: 20px;
+box-sizing: border-box;
+color: #fff;
+cursor: pointer;
+font-size: 16px;
+padding: 15px 0;
+margin-top: 15px;
+width: 100%;
+}
+
+input[type="button"]:hover {
+background-color: #084ccd;
+border: 2px solid #084ccd;
+ 
+}
+
+input[type="button"]: active {
+border-color: #f08080;
+}
+
+input[type="button"]:focus {
+outline: none;
+}
+ </style>
+        </head>
+
+<body>
+    <header>
+    
+        <nav>
+        <div class="header-logo"><img src="./Images/bb_logo(black).png"></div>
+    <div class="header-list">
+        <ul>
+            <li><a href="help.html">Get Help</a></li>
+            <li><a href="donate.html">Donate</a></li>
+            <li><a href="index.html#vol-sect">Volunteer</a></li>
+            <li><a href="index.html#about-us">About Us</a></li>
+            </ul>
+    </div>
+    </nav>
+    </header>
+ <div class="admin-login">   
+     <h1>Login</h1>
+     <div class="login-box">
+    <form action="admin.php" id="log" method="POST">
+    <div class="form-group">
+      <input type="email" name="email" required/><label>E-mail</label>
+    </div>
+    <div class="form-group">
+      <input type="password" name="pass" required/><label>Password</label>
+    </div>
+    <input type="button" value="Submit" />
+    </form>
+     </div>
+    </div>    
+
+</body>
+</html>
